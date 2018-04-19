@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Mung Hoang - Lab6 TMDB Web API</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Marcellus" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="navbar-container">
+            <ul class="navbar">
+                <h2>TMDB Web API</h2>
+                <li>
+                    <a href="http://cis-iis2.temple.edu/spring2018/CIS3344_tuf61987/">Home</a>
+                </li>
+                <li>
+                    <input type="button" id="btn_actor" value="Actors" />
+                </li>
+                <li>
+                    <input type="button" id="btn_movie" value="Movies" />
+                </li>
+                <li>
+                    <input type="button" id="btn_bestMovie" value="Best Movies" />
+                </li>
+            </ul>
+        </div>
+        <div class="cover-page">
+            <img class="cover-picture" src="https://media3.giphy.com/media/NnFZysBOEprAA/giphy.gif" />
+        </div>
+    </div>
+    <div class="container-100">
+        <div class="container-100">
+            <div class="container">
+                <h2 id="h2_title">Who is your favorite Actor/Actress?</h2>
+            </div>
+            <input type="text" id="txt_name" placeholder="Enter actor/actress's name">
+            <input id="btn_submitName" value="Search" type="button" />
+            <input type="text" id="txt_movie" placeholder="Enter movie's name">
+            <input id="btn_submitMovie" value="Search" type="button" />
+            <input type="text" id="txt_year" placeholder="Enter year">
+            <input id="btn_submitYear" value="Search" type="button" />
+            <div class="container" id="div_message">
+            </div>
+        </div>
+        <div class="clear" id="pag_name">
+            <input class="arrow" id='btn_prevName' value='Prev' type='button' />
+            <input class="arrow" id='btn_nextName' value='Next' type='button' />
+            <br /><br />
+        </div>
+        <div class="clear" id="pag_movie">
+            <input class="arrow" id='btn_prevMovie' value='Prev' type='button' />
+            <input class="arrow" id='btn_nextMovie' value='Next' type='button' />
+            <br /><br />
+        </div>
+        <div class="clear" id="pag_year">
+            <input class="arrow" id='btn_prevYear' value='Prev' type='button' />
+            <input class="arrow" id='btn_nextYear' value='Next' type='button' />
+            <br /><br />
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div class="footer">
+        <hr>
+        <h4>Mung Hoang</h4>
+        <h4>Email: m.lee@temple.edu</h4>
+    </div>
+    <script src="js/api.js"></script>
+</body>
+</html>
